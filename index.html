@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Canvas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="app">
+        <div class="playWrapper flex">
+            <div class="frame"></div>
+            <div class="btnWrapper flex">
+                <h1>Blank Canvas</h1>
+                <div class="btnContainer">
+                    <input type="radio" name="sizes" class="canvasSizes" id="box-16" value="16x16">
+                    <label for="box-16">16x16</label>
+
+                    <input type="radio" name="sizes" class="canvasSizes" id="box-32" value="32x32">
+                    <label for="box-32">32x32</label>
+
+                    <input type="radio" name="sizes" class="canvasSizes" id="box-64" value="64x64">
+                    <label for="box-64">64x64</label>
+                </div>
+
+                <div class="btnContainer flex">
+                    <input type="color" class="colorPicker" name="chooseColor">
+                    <label for="chooseColor" id="color-label">Choose a color</label>
+                </div>
+
+
+                <div class="btnContainer">
+                    <button class="clear">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+</body>
+</html>
