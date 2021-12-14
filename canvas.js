@@ -2,6 +2,7 @@ let canvasInputs = document.querySelectorAll('input[name="sizes"]');
 let paintColor = document.querySelector('input[name="chooseColor"]');
 let clearCanvas = document.querySelector('.clear');
 let eraser = document.querySelector('.erase');
+let draw = document.querySelector('.draw');
 let squaresToPaint;
 
 
@@ -73,6 +74,10 @@ function changeColor(color) {
         });
     });
 }
+
+draw.addEventListener('click', () => {
+    changeColor(`${paintColor.value}`);
+})
 
 //changes "brush" color on color picker input
 paintColor.addEventListener('input', () => {

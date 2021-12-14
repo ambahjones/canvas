@@ -82,8 +82,8 @@ button {
   height: 4rem;
 }
 
-.btnContainer.flex {
-  justify-content: end;
+#colors {
+  justify-content: center;
 }
 
 input.colorPicker {
@@ -94,4 +94,8 @@ input.colorPicker {
 
 #color-label {
   margin-right: 1.5rem;
+}
+
+#function-btns {
+  justify-content: space-evenly;
 }
